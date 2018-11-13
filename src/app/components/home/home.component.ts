@@ -9,17 +9,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
-  paises: any[] = [];
-  constructor(private http: HttpClient) {
+  constructor() {
 
-    console.log('ejecuntando');
-    this.http.get('https://restcountries.eu/rest/v2/lang/es').subscribe
-    ( (resp: any) => {
 
-      this.paises = resp;
-        console.log(resp);
-      }
-    );
 
 
   }
