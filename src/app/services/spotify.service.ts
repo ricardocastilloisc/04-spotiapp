@@ -15,16 +15,15 @@ export class SpotifyService {
 
   getNewReleses() {
 
+    // tslint:disable-next-line:max-line-length
+    let url = 'Bearer BQAewGVn0WqKCdIYeMqr0NZ_Dqb7EYTpOnzOy7y2LB8DIcmZwGBp7PtcDu1tumcIhLcGvXLuXoQwck8hTcc';
+
     const headers = new HttpHeaders(
       {
         // tslint:disable-next-line:max-line-length
-        'Authorization': 'Bearer BQDYL_PFLx2pVOaTMH1FyC6zvwbhN8aO5Etu2BzKajXnc_VMAeEFm53jO5NCpsprGneNtGGrJ8pzSoUI4AtamMoNoc-hcPVyWhDfoM3fN8VajoFSeJPLQl5q4wEfIsrsbw9iDR1aVNgEZRsQ16z2pgSoEdH-cyU1OQ'
+        'Authorization': url
       });
-    this.http.get('https://api.spotify.com/v1/browse/new-releases', {headers}).subscribe
-    (
-      data => {
-        console.log(data);
-      }
-    );
+
+    return this.http.get('https://api.spotify.com/v1/browse/new-releases', {headers});
   }
 }
