@@ -11,7 +11,7 @@ export class SpotifyService {
 
 
 
-  private token = 'Bearer BQBt1MQJT-vk14CIE_lPeM_aCU2xjPmgAGcp9LUOyhW4J88FE0gK2kmgXkLMzXq-t5ohuWSV19Iq6osnRfw';
+  private token = 'Bearer BQDfWNweDJsPKThnEl__B_MAMGNVeEw0OiRfYFtTT4vfNF-IqmHjFaWC7gPH5ppGmfSbEcpgOpBH9NGIraE';
 
 
   constructor(private http: HttpClient) {

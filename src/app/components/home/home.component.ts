@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { SpotifyService } from '../../services/spotify.service';
 
 
@@ -17,7 +16,7 @@ export class HomeComponent implements OnInit {
     (
       (data: any) =>
       {
-        console.log(data)
+        console.log(data);
         this.nuevasCanciones = data;
       }
     );
