@@ -11,7 +11,7 @@ export class SpotifyService {
 
 
 
-  private token = 'Bearer BQBX2UeAF8QSKVqhBnuxeYe0FzrhgXz1B3T3CjDpLWTgfKriwNfpaV_HKF37LE1JzQiG7q_MOMEaP_zwUvQ';
+  private token = 'Bearer BQBnhLFc_P6qBmFWi_PkmOeawqHPMJ2oRlRz952GG2OnWwdHzDhCI49dL-nJljuURvWRVDX2jGZ9CLwhV5s';
 
 
   constructor(private http: HttpClient) {
@@ -40,9 +40,13 @@ export class SpotifyService {
       map( data =>   data['albums'].items ));
   }
 
-  getArtista(termino: string){
+  getArtistas(termino: string){
     return this.getQuery(`search?q=${termino}&type=artist&limit=15`).pipe(
       map( data =>  data['artists'].items)
     );
+  }
+  getArtista(id: string){
+    return this.getQuery(`artists/${id}`);
+    //.pipe( map( data =>  data['artists'].items));
   }
 }
