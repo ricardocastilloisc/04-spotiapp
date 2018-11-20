@@ -19,6 +19,7 @@ export class ArtistaComponent implements OnInit {
         this.getTopTracks(paramas['id']);
       });
 
+
    }
 
   ngOnInit() {
@@ -38,6 +39,8 @@ export class ArtistaComponent implements OnInit {
       res => {
         console.log(res);
         this.TopTracks = res;
+        console.log('aqui esta el objeto');
+        console.log(this.TopTracks);
       }
     );
   }
