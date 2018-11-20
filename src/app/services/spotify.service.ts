@@ -13,7 +13,7 @@ export class SpotifyService {
 
   private text1 = 'Bearer ';
 
-  private text2 = 'BQC7Ul89yW9Dkza2srN64e_HdkyYH6dwkA3wz3cciHi4OzcQPpipA3_2xRj2F5z5KK72SAWUXxD_YDB0fbo';
+  private text2 = 'QC7Ul89yW9Dkza2srN64e_HdkyYH6dwkA3wz3cciHi4OzcQPpipA3_2xRj2F5z5KK72SAWUXxD_YDB0fbo';
 
   private token = this.text1 + this.text2;
 
